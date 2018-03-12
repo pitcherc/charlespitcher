@@ -4487,6 +4487,42 @@ button,
   font-size: 3rem;
 }
 
+.hover\:text-xs:hover {
+  font-size: .75rem;
+}
+
+.hover\:text-sm:hover {
+  font-size: .875rem;
+}
+
+.hover\:text-base:hover {
+  font-size: 1rem;
+}
+
+.hover\:text-lg:hover {
+  font-size: 1.125rem;
+}
+
+.hover\:text-xl:hover {
+  font-size: 1.25rem;
+}
+
+.hover\:text-2xl:hover {
+  font-size: 1.5rem;
+}
+
+.hover\:text-3xl:hover {
+  font-size: 1.875rem;
+}
+
+.hover\:text-4xl:hover {
+  font-size: 2.25rem;
+}
+
+.hover\:text-5xl:hover {
+  font-size: 3rem;
+}
+
 .italic {
   font-style: italic;
 }
@@ -8615,6 +8651,42 @@ button,
     font-size: 3rem;
   }
 
+  .sm\:hover\:text-xs:hover {
+    font-size: .75rem;
+  }
+
+  .sm\:hover\:text-sm:hover {
+    font-size: .875rem;
+  }
+
+  .sm\:hover\:text-base:hover {
+    font-size: 1rem;
+  }
+
+  .sm\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+  }
+
+  .sm\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+  }
+
+  .sm\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+  }
+
+  .sm\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+  }
+
+  .sm\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+  }
+
+  .sm\:hover\:text-5xl:hover {
+    font-size: 3rem;
+  }
+
   .sm\:italic {
     font-style: italic;
   }
@@ -12726,6 +12798,42 @@ button,
   }
 
   .md\:text-5xl {
+    font-size: 3rem;
+  }
+
+  .md\:hover\:text-xs:hover {
+    font-size: .75rem;
+  }
+
+  .md\:hover\:text-sm:hover {
+    font-size: .875rem;
+  }
+
+  .md\:hover\:text-base:hover {
+    font-size: 1rem;
+  }
+
+  .md\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+  }
+
+  .md\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+  }
+
+  .md\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+  }
+
+  .md\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+  }
+
+  .md\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+  }
+
+  .md\:hover\:text-5xl:hover {
     font-size: 3rem;
   }
 
@@ -16843,6 +16951,42 @@ button,
     font-size: 3rem;
   }
 
+  .lg\:hover\:text-xs:hover {
+    font-size: .75rem;
+  }
+
+  .lg\:hover\:text-sm:hover {
+    font-size: .875rem;
+  }
+
+  .lg\:hover\:text-base:hover {
+    font-size: 1rem;
+  }
+
+  .lg\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+  }
+
+  .lg\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+  }
+
+  .lg\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+  }
+
+  .lg\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+  }
+
+  .lg\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+  }
+
+  .lg\:hover\:text-5xl:hover {
+    font-size: 3rem;
+  }
+
   .lg\:italic {
     font-style: italic;
   }
@@ -20954,6 +21098,42 @@ button,
   }
 
   .xl\:text-5xl {
+    font-size: 3rem;
+  }
+
+  .xl\:hover\:text-xs:hover {
+    font-size: .75rem;
+  }
+
+  .xl\:hover\:text-sm:hover {
+    font-size: .875rem;
+  }
+
+  .xl\:hover\:text-base:hover {
+    font-size: 1rem;
+  }
+
+  .xl\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+  }
+
+  .xl\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+  }
+
+  .xl\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+  }
+
+  .xl\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+  }
+
+  .xl\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+  }
+
+  .xl\:hover\:text-5xl:hover {
     font-size: 3rem;
   }
 
