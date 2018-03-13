@@ -1,5 +1,5 @@
 <template>
-    <p>This is the about page</p>
+    <p>This is the contact page</p>
 </template>
 
 <script>

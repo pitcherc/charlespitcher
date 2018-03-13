@@ -1,7 +1,12 @@
 <template>
-    <p>This is the homepage</p>
+    
 </template>
 
 <script>
-export default {};
+export default {
+    beforeRouteLeave(to, from, next) {
+        this.$emit("leaving", "home");
+        next();
+    }
+};
 </script>

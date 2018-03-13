@@ -33421,7 +33421,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("p", [_vm._v("This is the about page")])
+  return _c("p", [_vm._v("This is the contact page")])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -33523,21 +33523,59 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            loading: true
-        };
-    },
-
     computed: {
         isHome: function isHome() {
-            return this.$router.currentRoute.name === "home";
+            return this.$route.name === "home";
         }
-    },
-    mounted: function mounted() {
-        this.loading = false;
     }
 });
 
@@ -33549,135 +33587,137 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("transition", { attrs: { name: "long-fade" } }, [
+  return _c("div", [
+    _c(
+      "div",
+      { staticClass: "min-h-screen flex items-center justify-center" },
+      [
         _c(
           "div",
           {
-            directives: [
-              {
-                name: "show",
-                rawName: "v-show",
-                value: !_vm.loading,
-                expression: "!loading"
-              }
-            ],
-            staticClass: "min-h-screen flex items-center justify-center"
+            staticClass: "fixed pin-50-50",
+            class: { nav: !_vm.isHome },
+            attrs: { id: "nav" }
           },
           [
-            _c("div", { staticClass: "flex flex-col justify-around h-full" }, [
-              _c(
-                "div",
-                [
-                  _vm._t("title"),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "list-reset" }, [
-                    _c(
-                      "li",
-                      { staticClass: "inline pr-8" },
-                      [
-                        _c(
-                          "router-link",
-                          {
-                            staticClass:
-                              "no-underline align-top hover:text-lg text-sm font-normal text-brand-dark uppercase",
-                            attrs: { to: { name: "home" }, title: "Home" }
-                          },
-                          [_vm._v("Home")]
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      { staticClass: "inline pr-8" },
-                      [
-                        _c(
-                          "router-link",
-                          {
-                            staticClass:
-                              "no-underline align-top hover:text-lg text-sm font-normal text-brand-dark uppercase",
-                            attrs: { to: { name: "about" }, title: "About" }
-                          },
-                          [_vm._v("About")]
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      { staticClass: "inline pr-8" },
-                      [
-                        _c(
-                          "router-link",
-                          {
-                            staticClass:
-                              "no-underline align-top hover:text-lg text-sm font-normal text-brand-dark uppercase",
-                            attrs: {
-                              to: { name: "projects" },
-                              title: "Projects"
-                            }
-                          },
-                          [_vm._v("Projects")]
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      { staticClass: "inline" },
-                      [
-                        _c(
-                          "router-link",
-                          {
-                            staticClass:
-                              "no-underline align-top hover:text-lg text-sm font-normal text-brand-dark uppercase",
-                            attrs: { to: { name: "contact" }, title: "Contact" }
-                          },
-                          [_vm._v("Contact")]
-                        )
-                      ],
-                      1
-                    )
-                  ])
-                ],
-                2
-              )
-            ])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "min-h-screen flex items-center justify-center" },
-        [
-          _c("div", { staticClass: "flex flex-col justify-around h-full" }, [
-            _c(
-              "div",
-              [
+            _c("div", [
+              _vm._m(0),
+              _vm._v(" "),
+              _c("ul", { staticClass: "list-reset", attrs: { id: "menu" } }, [
                 _c(
-                  "transition",
-                  { attrs: { name: "fade", mode: "out-in" } },
-                  [_c("router-view")],
+                  "li",
+                  { staticClass: "inline pr-8" },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass:
+                          "no-underline align-top hover:text-lg text-sm font-normal text-brand-dark uppercase",
+                        attrs: {
+                          to: { name: "home" },
+                          id: "home",
+                          title: "Home"
+                        }
+                      },
+                      [_vm._v("Home")]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "li",
+                  { staticClass: "inline pr-8" },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass:
+                          "no-underline align-top hover:text-lg text-sm font-normal text-brand-dark uppercase",
+                        attrs: { to: { name: "about" }, title: "About" }
+                      },
+                      [_vm._v("About")]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "li",
+                  { staticClass: "inline pr-8" },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass:
+                          "no-underline align-top hover:text-lg text-sm font-normal text-brand-dark uppercase",
+                        attrs: { to: { name: "projects" }, title: "Projects" }
+                      },
+                      [_vm._v("Projects")]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "li",
+                  { staticClass: "inline" },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass:
+                          "no-underline align-top hover:text-lg text-sm font-normal text-brand-dark uppercase",
+                        attrs: { to: { name: "contact" }, title: "Contact" }
+                      },
+                      [_vm._v("Contact")]
+                    )
+                  ],
                   1
                 )
-              ],
-              1
-            )
-          ])
-        ]
-      )
-    ],
-    1
-  )
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "flex flex-col justify-around h-full" }, [
+          _c(
+            "div",
+            [
+              _c(
+                "transition",
+                { attrs: { name: "fade", mode: "out-in" } },
+                [_c("router-view")],
+                1
+              )
+            ],
+            1
+          )
+        ])
+      ]
+    )
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "h1",
+      {
+        staticClass:
+          "text-grey-darker text-left whitespace-no-wrap font-hairline tracking-wide text-5xl mb-6"
+      },
+      [
+        _vm._v("\n                    C"),
+        _c("div", { staticClass: "minimize" }, [_vm._v("harles ")]),
+        _vm._v("P"),
+        _c("div", { staticClass: "minimize" }, [_vm._v("itcher")])
+      ]
+    )
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -33695,7 +33735,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("p", [_vm._v("This is the homepage")])
+  return _c("div")
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -33718,7 +33758,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+    beforeRouteLeave: function beforeRouteLeave(to, from, next) {
+        this.$emit("leaving", "home");
+        next();
+    }
+});
 
 /***/ }),
 /* 55 */
@@ -33794,7 +33839,7 @@ exports = module.exports = __webpack_require__(45)(false);
 
 
 // module
-exports.push([module.i, "\n.fade-enter-active,\n.fade-leave-active {\n    transition: opacity 0.5s;\n}\n.fade-enter,\n.fade-leave-to {\n    opacity: 0;\n}\n.long-fade-enter-active,\n.long-fade-leave-active {\n    transition: opacity 1s;\n}\n.long-fade-enter,\n.long-fade-leave-to {\n    opacity: 0;\n}\n.list-reset a {\n    transition: all 0.3s ease;\n}\n", ""]);
+exports.push([module.i, "\n.nav .router-link-exact-active {\n    font-size: 1.875rem;\n    transition: font-size 0.3s ease 0.5s;\n}\n.fade-enter-active,\n.fade-leave-active {\n    transition: opacity 0.5s;\n}\n.fade-enter,\n.fade-leave-to {\n    opacity: 0;\n}\n.long-fade-enter-active,\n.long-fade-leave-active {\n    transition: opacity 1s;\n}\n.long-fade-enter,\n.long-fade-leave-to {\n    opacity: 0;\n}\n.list-reset a {\n    transition: all 0.3s ease;\n}\n.pin-50-50 {\n    top: 50%;\n    left: 50%;\n    transform: translate3d(-50%, -50%, 0);\n}\n.nav {\n    top: 10px;\n    left: 20px;\n    transform: none;\n}\nh1 .minimize {\n    width: 145px;\n    overflow: hidden;\n    vertical-align: bottom;\n    display: inline-block;\n    transition: all 0.5s ease;\n}\n.nav .minimize {\n    width: 0;\n    transition: all 0.5s ease 0.3s;\n}\n#nav {\n    transition: all 0.5s ease 0.5s;\n}\n#nav.nav {\n    transition: all 0.5s ease;\n}\n#nav {\n    max-width: 325px;\n}\n#menu {\n    position: absolute;\n    white-space: nowrap;\n    top: 100%;\n    left: 50%;\n    transition: all 0.3s ease 0.2s, top 0.4s ease;\n    transform: translate3d(-50%, 0, 0);\n}\n.nav #menu {\n    top: 25%;\n    left: 100px;\n    transform: none;\n    transition: all 0.3s ease 0.3s, top 0.5s ease 0.45s;\n}\n", ""]);
 
 // exports
 
