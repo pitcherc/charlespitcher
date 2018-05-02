@@ -3787,6 +3787,31 @@ button,
           box-shadow: none;
 }
 
+.focus\:shadow:focus {
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+}
+
+.focus\:shadow-md:focus {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+}
+
+.focus\:shadow-lg:focus {
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+}
+
+.focus\:shadow-inner:focus {
+  -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+          box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+}
+
+.focus\:shadow-none:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .fill-current {
   fill: currentColor;
 }
@@ -4861,6 +4886,19 @@ button,
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+input,
+textarea {
+  -webkit-transition: -webkit-box-shadow .2s ease;
+  transition: -webkit-box-shadow .2s ease;
+  transition: box-shadow .2s ease;
+  transition: box-shadow .2s ease, -webkit-box-shadow .2s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
 
 @media (min-width: 576px) {
   .sm\:list-reset {
@@ -7955,6 +7993,31 @@ button,
   }
 
   .sm\:shadow-none {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .sm\:focus\:shadow:focus {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  }
+
+  .sm\:focus\:shadow-md:focus {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+  }
+
+  .sm\:focus\:shadow-lg:focus {
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+            box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+  }
+
+  .sm\:focus\:shadow-inner:focus {
+    -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+  }
+
+  .sm\:focus\:shadow-none:focus {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -12109,6 +12172,31 @@ button,
             box-shadow: none;
   }
 
+  .md\:focus\:shadow:focus {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  }
+
+  .md\:focus\:shadow-md:focus {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+  }
+
+  .md\:focus\:shadow-lg:focus {
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+            box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+  }
+
+  .md\:focus\:shadow-inner:focus {
+    -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+  }
+
+  .md\:focus\:shadow-none:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -16259,6 +16347,31 @@ button,
             box-shadow: none;
   }
 
+  .lg\:focus\:shadow:focus {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  }
+
+  .lg\:focus\:shadow-md:focus {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+  }
+
+  .lg\:focus\:shadow-lg:focus {
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+            box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+  }
+
+  .lg\:focus\:shadow-inner:focus {
+    -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+  }
+
+  .lg\:focus\:shadow-none:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -20405,6 +20518,31 @@ button,
   }
 
   .xl\:shadow-none {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .xl\:focus\:shadow:focus {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  }
+
+  .xl\:focus\:shadow-md:focus {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+  }
+
+  .xl\:focus\:shadow-lg:focus {
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+            box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+  }
+
+  .xl\:focus\:shadow-inner:focus {
+    -webkit-box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
+  }
+
+  .xl\:focus\:shadow-none:focus {
     -webkit-box-shadow: none;
             box-shadow: none;
   }

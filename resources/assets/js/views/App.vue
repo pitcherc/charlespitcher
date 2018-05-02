@@ -26,14 +26,12 @@
                 </div>
             </div>
         
-            <div class="flex flex-col justify-around h-full">
-                <div>
+            <div class="absolute pin-50-50 pin-r">
 
-                    <transition name="fade" mode="out-in">
-                        <router-view></router-view>
-                    </transition>
+                <transition name="fade" mode="out-in">
+                    <router-view></router-view>
+                </transition>
 
-                </div>
             </div>
         </div>
     </div>

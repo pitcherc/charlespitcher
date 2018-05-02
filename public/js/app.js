@@ -33612,8 +33612,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     computed: {
@@ -33724,20 +33722,19 @@ var render = function() {
           ]
         ),
         _vm._v(" "),
-        _c("div", { staticClass: "flex flex-col justify-around h-full" }, [
-          _c(
-            "div",
-            [
-              _c(
-                "transition",
-                { attrs: { name: "fade", mode: "out-in" } },
-                [_c("router-view")],
-                1
-              )
-            ],
-            1
-          )
-        ])
+        _c(
+          "div",
+          { staticClass: "absolute pin-50-50 pin-r" },
+          [
+            _c(
+              "transition",
+              { attrs: { name: "fade", mode: "out-in" } },
+              [_c("router-view")],
+              1
+            )
+          ],
+          1
+        )
       ]
     )
   ])
@@ -34112,67 +34109,67 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-full max-w-xs" }, [
-      _c(
-        "form",
-        { staticClass: "bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" },
-        [
-          _c("div", { staticClass: "mb-4" }, [
-            _c(
-              "label",
-              {
-                staticClass: "block text-grey-darker text-sm font-bold mb-2",
-                attrs: { for: "name" }
-              },
-              [_vm._v("\n                Name\n            ")]
-            ),
-            _vm._v(" "),
-            _c("input", {
-              staticClass:
-                "shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker",
-              attrs: { id: "name", type: "text", placeholder: "John Doe" }
-            })
-          ]),
+    return _c("div", { staticClass: "w-full" }, [
+      _c("form", { staticClass: "bg-white shadow-md px-8 pt-6 pb-8 mb-4" }, [
+        _c("div", { staticClass: "mb-6" }, [
+          _c(
+            "label",
+            {
+              staticClass: "block text-grey-darker text-sm mb-2",
+              attrs: { for: "name" }
+            },
+            [_vm._v("\n                Name\n            ")]
+          ),
           _vm._v(" "),
-          _c("div", { staticClass: "mb-6" }, [
-            _c(
-              "label",
-              {
-                staticClass: "block text-grey-darker text-sm font-bold mb-2",
-                attrs: { for: "email" }
-              },
-              [_vm._v("\n                Email\n            ")]
-            ),
-            _vm._v(" "),
-            _c("input", {
-              staticClass:
-                "shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3",
-              attrs: {
-                id: "email",
-                type: "text",
-                placeholder: "johndoe@example.com"
-              }
-            })
-          ]),
+          _c("input", {
+            staticClass:
+              "appearance-none bg-grey-lighter w-full py-2 px-3 text-grey-darker focus:shadow-md",
+            attrs: { id: "name", type: "text", placeholder: "John Doe" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "mb-6" }, [
+          _c(
+            "label",
+            {
+              staticClass: "block text-grey-darker text-sm mb-2",
+              attrs: { for: "email" }
+            },
+            [_vm._v("\n                Email\n            ")]
+          ),
           _vm._v(" "),
-          _c("div", { staticClass: "mb-6" }, [
-            _c(
-              "label",
-              {
-                staticClass: "block text-grey-darker text-sm font-bold mb-2",
-                attrs: { for: "message" }
-              },
-              [_vm._v("\n                Message\n            ")]
-            ),
-            _vm._v(" "),
-            _c("textarea", {
-              staticClass:
-                "shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3",
-              attrs: { id: "message" }
-            })
-          ])
-        ]
-      )
+          _c("input", {
+            staticClass:
+              "appearance-none bg-grey-lighter w-full py-2 px-3 text-grey-darker focus:shadow-md",
+            attrs: {
+              id: "email",
+              type: "text",
+              placeholder: "johndoe@example.com"
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "label",
+            {
+              staticClass: "block text-grey-darker text-sm mb-2",
+              attrs: { for: "message" }
+            },
+            [_vm._v("\n                Message\n            ")]
+          ),
+          _vm._v(" "),
+          _c("textarea", {
+            staticClass:
+              "appearance-none bg-grey-lighter w-full py-2 px-3 text-grey-darker focus:shadow-md",
+            attrs: {
+              id: "message",
+              placeholder: "Hey! I have something to tell you.",
+              rows: "8"
+            }
+          })
+        ])
+      ])
     ])
   }
 ]

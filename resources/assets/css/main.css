@@ -43,3 +43,12 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+input,
+textarea {
+    transition: box-shadow 0.2s ease;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+}
