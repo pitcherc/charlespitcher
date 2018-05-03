@@ -34118,7 +34118,7 @@ var staticRenderFns = [
               staticClass: "block text-grey-darker text-sm mb-2",
               attrs: { for: "name" }
             },
-            [_vm._v("\n                Name\n            ")]
+            [_vm._v("\n                NAME\n            ")]
           ),
           _vm._v(" "),
           _c("input", {
@@ -34135,7 +34135,7 @@ var staticRenderFns = [
               staticClass: "block text-grey-darker text-sm mb-2",
               attrs: { for: "email" }
             },
-            [_vm._v("\n                Email\n            ")]
+            [_vm._v("\n                EMAIL\n            ")]
           ),
           _vm._v(" "),
           _c("input", {
@@ -34156,7 +34156,7 @@ var staticRenderFns = [
               staticClass: "block text-grey-darker text-sm mb-2",
               attrs: { for: "message" }
             },
-            [_vm._v("\n                Message\n            ")]
+            [_vm._v("\n                MESSAGE\n            ")]
           ),
           _vm._v(" "),
           _c("textarea", {
